@@ -1,0 +1,11 @@
+server:
+  port: 9761
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
+
+spring:
+  application:
+    name: spring-provider
