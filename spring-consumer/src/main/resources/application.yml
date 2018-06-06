@@ -1,5 +1,5 @@
 server:
-  port: 9762
+  port: 10010
 
 eureka:
   client:
@@ -9,3 +9,5 @@ eureka:
 spring:
   application:
     name: spring-consumer
+
+
