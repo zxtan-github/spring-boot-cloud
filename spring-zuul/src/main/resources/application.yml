@@ -1,5 +1,5 @@
 server:
-  port: 9762
+  port: 10086
 
 eureka:
   client:
@@ -8,4 +8,4 @@ eureka:
 
 spring:
   application:
-    name: spring-provider
+    name: spring-zuul
