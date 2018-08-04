@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: spring-config #这里是config-server的项目名称，因为从eureka注册中心获取服务
+      profile: pre
+      label: master
+      name: spring-consumer #git上面的appplication名称，不是config-server的项目名称
+
+
+#spring:
+#  cloud:
+#    config:
+#      uri: http://localhost:10010/
+#      profile: pre
+#      label: master
+#      name: spring-consumer #git上面的appplication名称，不是config-server的项目名称

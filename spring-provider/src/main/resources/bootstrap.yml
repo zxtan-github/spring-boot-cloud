@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-provider
+  cloud:
+    config:
+      uri: http://localhost:10010/
+      profile: pre
+      label: master
+      name: spring-provider #git上面的appplication名称，不是config-server的项目名称
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
