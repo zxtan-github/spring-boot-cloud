@@ -1,9 +1,11 @@
 package org.tanzongxi.spring.springprovider.restcontroller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.tanzongxi.spring.springprovider.rabbitmq.RabbitMqSimpleSendService;
 
 @RefreshScope
 @RestController
@@ -15,6 +17,9 @@ public class RestHelloController {
     @Value("${envName}")
     private String envName;
 
+    @Autowired
+    RabbitMqSimpleSendService rabbitMqSimpleSendService;
+
     @RequestMapping("/helloCloud")
     public String helloCloud() {
         System.out.printf("helloCloud: " + port);
@@ -25,5 +30,12 @@ public class RestHelloController {
     public String envNameCloud() {
         System.out.printf("envName: " + envName);
         return envName;
+    }
+
+
+    @RequestMapping("/sendHelloMsg")
+    public String sendHelloMsg(String msg) {
+        rabbitMqSimpleSendService.sendHelloMsg(msg);
+        return "success";
     }
 }
