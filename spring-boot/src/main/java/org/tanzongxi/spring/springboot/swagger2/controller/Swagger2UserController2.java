@@ -11,8 +11,8 @@ import java.util.List;
 
 @Api("用户信息管理")
 @RestController
-@RequestMapping("/user/*")
-public class Swagger2UserController {
+@RequestMapping("/skk/*")
+public class Swagger2UserController2 {
 
     private final static List<Swagger2UserEntity> userList = new ArrayList<>();
 
@@ -23,7 +23,7 @@ public class Swagger2UserController {
 
     @ApiOperation("获取列表")
     @GetMapping("list")
-    public List<Swagger2UserEntity> userList() {
+    public List userList() {
         return userList;
     }
 
@@ -45,11 +45,5 @@ public class Swagger2UserController {
     @DeleteMapping("delete")
     public boolean delete(@RequestBody List<Swagger2UserEntity> users) {
         return userList.removeAll(users);
-    }
-
-    @ApiOperation("获取第一个")
-    @GetMapping("getByFirst")
-    public Swagger2UserEntity getByFirst() {
-        return userList.get(0);
     }
 }
