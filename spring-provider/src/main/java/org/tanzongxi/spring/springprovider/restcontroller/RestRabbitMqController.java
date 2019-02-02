@@ -16,13 +16,13 @@ public class RestRabbitMqController {
     private SendChannel sendChannel;
 
     @Autowired
-    private MessageChannel mqScoreOutput;
+    private MessageChannel exchangeName2;
 
     @RequestMapping("/rabbitSendMsg")
-    public String helloCloud() {
-        Message<String> fffff = MessageBuilder.withPayload("fffffsend1").build();
-        sendChannel.scoreOutput().send(fffff);
-        System.out.println("发送消息send1");
+    public String rabbitSendMsg(String msg) {
+        Message<String> msgSend = MessageBuilder.withPayload(msg).build();
+        sendChannel.scoreOutput().send(msgSend);
+        System.out.println("发送消息:" + msg);
         return "success";
     }
 }
