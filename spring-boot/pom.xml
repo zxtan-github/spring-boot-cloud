@@ -33,6 +33,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-freemarker</artifactId>-->
+        <!--</dependency>-->
+
         <!-- spring cloud rabbit -->
         <!--<dependency>-->
             <!--<groupId>org.springframework.cloud</groupId>-->
