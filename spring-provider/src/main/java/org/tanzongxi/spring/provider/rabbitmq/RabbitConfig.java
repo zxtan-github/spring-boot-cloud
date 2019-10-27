@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springprovider.rabbitmq;
+package org.tanzongxi.spring.provider.rabbitmq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;

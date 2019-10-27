@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springprovider;
+package org.tanzongxi.spring.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

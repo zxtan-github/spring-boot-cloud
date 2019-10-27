@@ -1,11 +1,11 @@
-package org.tanzongxi.spring.springprovider.restcontroller;
+package org.tanzongxi.spring.provider.restcontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.tanzongxi.spring.springprovider.rabbitmq.RabbitMqSimpleSendService;
+import org.tanzongxi.spring.provider.rabbitmq.RabbitMqSimpleSendService;
 
 @RefreshScope
 @RestController

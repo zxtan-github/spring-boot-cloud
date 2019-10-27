@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springconsumer.hystrix;
+package org.tanzongxi.spring.consumer.hystrix;
 
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;

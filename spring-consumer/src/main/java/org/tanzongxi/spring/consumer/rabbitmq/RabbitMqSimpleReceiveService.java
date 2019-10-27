@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springconsumer.rabbitmq;
+package org.tanzongxi.spring.consumer.rabbitmq;
 
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;

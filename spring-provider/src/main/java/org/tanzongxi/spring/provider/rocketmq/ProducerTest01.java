@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springprovider.rocketmq;
+package org.tanzongxi.spring.provider.rocketmq;
 
 import com.alibaba.rocketmq.client.exception.MQBrokerException;
 import com.alibaba.rocketmq.client.exception.MQClientException;

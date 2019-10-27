@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springprovider.rabbitmq;
+package org.tanzongxi.spring.provider.rabbitmq;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

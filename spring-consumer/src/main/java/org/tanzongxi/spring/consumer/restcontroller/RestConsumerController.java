@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springconsumer.restcontroller;
+package org.tanzongxi.spring.consumer.restcontroller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

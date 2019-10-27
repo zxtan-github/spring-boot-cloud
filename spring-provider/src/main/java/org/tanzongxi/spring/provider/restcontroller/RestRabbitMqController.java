@@ -1,4 +1,4 @@
-package org.tanzongxi.spring.springprovider.restcontroller;
+package org.tanzongxi.spring.provider.restcontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
