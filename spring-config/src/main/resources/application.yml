@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zxtan-github/github-test.git
+          uri: https://github.com/zxtan-github/config-server.git
           searchPaths: config
   application:
     name: spring-config
