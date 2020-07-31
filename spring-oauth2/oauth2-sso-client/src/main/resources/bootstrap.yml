@@ -1,0 +1,24 @@
+server:
+  port: 9502
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2-CLIENT-SESSIONID # 多个子系统的cookie name要相同，因为访问认证服务器就是通过cookie来判断是否已经登录过了，不同将导致需要登录
+oauth2-server-url: http://localhost:10001
+spring:
+  application:
+    name: oauth2-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.253.1:8848 #配置Nacos地址
+security:
+  oauth2: #与oauth2-server对应的配置
+    client:
+      client-id: admin
+      client-secret: admin123456
+      user-authorization-uri: ${oauth2-server-url}/oauth/authorize
+      access-token-uri: ${oauth2-server-url}/oauth/token
+    resource:
+      jwt:
+        key-uri: ${oauth2-server-url}/oauth/token_key

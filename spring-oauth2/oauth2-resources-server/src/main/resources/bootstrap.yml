@@ -1,0 +1,24 @@
+server:
+  port: 10002
+service-url:
+  oauth2-authorize-server: http://localhost:10001
+spring:
+  application:
+    name: oauth2-resources-server
+  redis:
+    host: 10.32.156.170
+    password: vUYpxuQ1JGmXZ8Pa
+    port: 6379
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.253.1:8848 #配置Nacos地址
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+security:
+  oauth2:
+    client:
+        client-id: tanzongxi
+        client-secret: 123456
+    resource:
+      token-info-uri: ${service-url.oauth2-authorize-server}/oauth/check_token
