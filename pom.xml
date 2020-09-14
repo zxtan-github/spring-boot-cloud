@@ -19,8 +19,7 @@
         <module>spring-zipkin</module>
         <module>spring-gateway</module>
         <module>spring-nacos</module>
-        <module>spring-nacos-provider</module>
         <module>spring-oauth2</module>
-        <module>spring-oauth2-sso</module>
+        <module>spring-webflux</module>
     </modules>
 </project>

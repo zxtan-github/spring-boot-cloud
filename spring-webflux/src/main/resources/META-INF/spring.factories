@@ -1,0 +1,4 @@
+org.springframework.boot.SpringApplicationRunListener=org.tanzongxi.spring.webflux.listener.CustomSpringApplicationRunListener
+
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=other.CustomEnableAutoConfiguration

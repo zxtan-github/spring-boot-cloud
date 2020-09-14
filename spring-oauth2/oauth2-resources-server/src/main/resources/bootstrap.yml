@@ -18,7 +18,7 @@ spring:
 security:
   oauth2:
     client:
-        client-id: tanzongxi
-        client-secret: 123456
+        client-id: admin
+        client-secret: admin123456
     resource:
       token-info-uri: ${service-url.oauth2-authorize-server}/oauth/check_token
