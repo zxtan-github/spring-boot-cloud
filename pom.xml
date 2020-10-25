@@ -21,5 +21,6 @@
         <module>spring-nacos</module>
         <module>spring-oauth2</module>
         <module>spring-webflux</module>
+        <module>spring-kafka</module>
     </modules>
 </project>
